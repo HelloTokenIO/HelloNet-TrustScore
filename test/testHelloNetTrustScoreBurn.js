@@ -55,7 +55,7 @@ contract('BurnableToken', function(accounts) {
     });
 
     describe('when the given amount is greater than the balance of the sender', function () {
-      const amount = (431 * 10 ** 6) * 10 ** DECIMALS;
+      const amount = (1000 * 10 ** 6) * 10 ** DECIMALS;
 
       it('reverts', async function () {
         await assertRevert(this.token.burn(amount, { from }));
