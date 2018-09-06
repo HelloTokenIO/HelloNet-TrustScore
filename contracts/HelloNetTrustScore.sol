@@ -29,7 +29,7 @@ contract HelloNetTrustScrore is Ownable, PausableToken {
     string constant public name = "HelloNet Trust Score";
     string constant public symbol = "HTS";
     // solhint-disable-next-line
-    uint8 constant public decimals = 18; // 18 decimals is the strongly suggested default, avoid changing it
+    uint8 constant public decimals = 2; // TrustScore Tokens can have only 2 decimals
 
 
     /**
